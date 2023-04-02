@@ -2,5 +2,22 @@
   "dependencies": {
     "express": "^4.18.2",
     "mongoose": "^7.0.3"
-  }
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "socialnetwork",
+  "version": "1.0.0",
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Maivory12/socialNetwork.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Maivory12/socialNetwork/issues"
+  },
+  "homepage": "https://github.com/Maivory12/socialNetwork#readme",
+  "description": ""
 }
