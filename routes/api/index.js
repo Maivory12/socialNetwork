@@ -1,6 +1,5 @@
 // Adds the /users, /thoughts to the https 
-
-const router = require("express").Router();
+const router = require('express').Router();
 const userRoutes = require('./user-routes');
 const thoughtRoutes = require('./thought-routes');
 
