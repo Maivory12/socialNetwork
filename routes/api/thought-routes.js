@@ -4,9 +4,9 @@ const router = require("express").Router();
 // IMPORT
 const { getAllThought, 
     getThoughtById, 
-    createThought, 
+    addThought, 
     updateThought, 
-    deleteThought, 
+    removeThought, 
     addReaction, 
     removeReaction,
 } = require('../../controllers/Thought-controller');
@@ -20,7 +20,7 @@ router
 // api/thoughts/:id
 router
 .route("/:userId")
-.post(createThought)
+.post(addThought)
 
 // specific thought  /:thoughtId
 router
@@ -31,7 +31,7 @@ router
 // 
 router
 .route('/userId/:thoughtId')
-.delete(deleteThought);
+.delete(removeThought);
 
 // api/thoughts/:thoughtId/reaction
 router.route("/:thoughtId/reaction")

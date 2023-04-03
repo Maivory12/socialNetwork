@@ -3,9 +3,9 @@ const router = require("express").Router();
 // IMPORT
 const { getAllUser, 
     getUserById, 
-    createUser, 
+    addUser, 
     updateUser, 
-    deleteUser, 
+    removeUser, 
     addFriend, 
     removeFriend,
 } = require('../../controllers/User-controller');
@@ -14,14 +14,14 @@ const { getAllUser,
 router
 .route('/')
 .get(getAllUser)
-.post(createUser)
+.post(addUser)
 
 // api/users/:id
 router
 .route("/:id")
 .get(getUserById)
 .put(updateUser)
-.delete(deleteUser)
+.delete(removeUser)
 
 // api/users/:userId/friend/friendId
 router
