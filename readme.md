@@ -21,7 +21,7 @@ Social Network
   n/a
      
   ## Usage
-    This is not a live application -- no live link will be provided. Users are encouraged to download the packages in "Technologies Used" and run clone the code locally. Please npm install (installs dependencies needed for the application) then npm start to start the server
+    This is not a live application -- a live link will be provided. Users are encouraged to download the packages in "Technologies Used" and run clone the code locally. Please npm install (installs dependencies needed for the application) then npm start to start the server
     
   ## Contributors
     N/A
@@ -38,4 +38,4 @@ Social Network
 
   ## LiveApp
 
-    [Screencastify Recording]()
+    [Screencastify Recording](https://drive.google.com/file/d/1xoWgZb3q7a1yDey51gydjaOFvoM62tq8/view)
