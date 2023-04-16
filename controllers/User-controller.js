@@ -13,7 +13,7 @@ const userController = {
             });
     },
 
-    // get one thought by id
+    // get one user by id
     getUserById({ params }, res) {
         User.findOne({ _id: params.userId })
             .populate({
@@ -31,7 +31,7 @@ const userController = {
                 res.sendStatus(400);
             });
     },
-    // add thought to user
+    // add user 
     addUser({ params, body }, res) {
         console.log(params);
         User.create(body)
@@ -42,7 +42,7 @@ const userController = {
             .catch(err => res.json(err));
     },
 
-    // add a reaction to thought
+    // add a friend
     addFriend({ params, body }, res) {
         User.findOneAndUpdate(
             { _id: params.userId },
@@ -58,7 +58,7 @@ const userController = {
             })
             .catch(err => res.json(err));
     },
-    // update thought
+    // update user
     updateUser({ params, body }, res) {
         User.findOneAndUpdate(
             { _id: params.userId },
@@ -75,7 +75,7 @@ const userController = {
             .catch(err => res.json(err));
     },
 
-    // remove thought
+    // remove user
     removeUser({ params }, res) {
         User.findOneAndDelete({ _id: params.userId })
             .then(deletedUser => {
@@ -88,7 +88,7 @@ const userController = {
             })
             .catch(err => res.json(err));
     },
-    // remove reply
+    // remove friend
     removeFriend({ params }, res) {
         User.findOneAndUpdate(
             { _id: params.userId },
